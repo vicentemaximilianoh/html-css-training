@@ -1,0 +1,97 @@
+
+body {
+  font-size: 14px;
+  color: #fff;
+  background-color: #666;
+  background: linear-gradient(grey, white); /* Main container should have 2-colors gradient */
+}
+
+header h1 {
+  font-family: "Arial";
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #999;
+}
+
+
+nav {
+  width: 20%;
+  display: inline-block;
+  background-color: #999;
+}
+
+section {
+  width: 60%;
+  display: inline-block;
+  background-color: #999;
+}
+
+section footer {
+background-color: #ccc;
+}
+
+article {
+  background-color: #ccc;
+
+}
+
+aside {
+  width: 20%;
+  display: inline-block;
+  background-color: #999;
+}
+
+footer {
+  clear: both;
+  background-color: #999;
+}
+
+
+
+.header h1 {
+  font-size: 46px;
+  text-shadow: 2px 2px 2px black; /* Title should have a text shadow */
+}
+.footer {
+  font-size: 10px;
+  opacity: 0.2;
+}
+.content {
+  font-size: 14px;
+}
+.navigation {
+  font-size: 12px;
+  box-shadow: 3px 3px 3px black; /* Navigation container should have a box shadow */
+}
+.sidebar {
+  font-size: 10px;
+  opacity: 0.2;
+}
+
+/* class attribute finishes with r (example header, footer) , the background must be magenta */
+[class$="r"]{
+  background-color: magenta;
+}
+
+/* class attribute contains an a (example nav) but does not finish with r , the background must
+be blue */
+[class*="a"]:not([class$="r"]) {
+  background-color: blue;
+}
+
+
+
+
+
+  /* Ellipsis added for long parragraphs. */
+.truncated-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Approach in order to change the background to green without changing the inline styles. */
+.oh-no-inline-styles {
+  background-color: green !important;
+}
