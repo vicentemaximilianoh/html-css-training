@@ -1,0 +1,168 @@
+/**
+ *  Variables
+**/
+@import "base";
+
+
+/**
+ *  Variables
+**/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: @colorBase;
+  color: @colorText;
+}
+
+.header {
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+
+  &-sm{
+    display: inline-block;
+    &-logo {
+      width: 64px;
+      height: 64px;
+    }
+  }
+
+  &-md{
+    display: none;
+  }
+
+  &-menu {
+    display: inline-block;
+  }
+
+}
+
+
+
+.nav {
+  &-list {
+    &-item {
+      border: 1px solid @colorSecond;
+      text-align: center;
+      padding: 5px;
+    }
+  }
+}
+
+main {
+    background-color: @colorSecond;
+}
+
+section {
+  padding: 10px;
+}
+
+.news{
+  &-list{
+    &-item {
+      background-color: @colorBase;
+
+      padding: 10px;
+      &:first-child{
+        margin-bottom: 10px;
+      }
+
+      .border-radius(8px);
+
+      h1 {
+        padding-bottom: 10px;
+        text-align: center;
+      }
+
+      .description {
+        margin: auto;
+        width: 90%;
+        padding: 10px;
+      }
+
+    }
+  }
+}
+
+.subsection-container{
+  padding-top: 0;
+  .subsection {
+    padding-top: 0;
+     img {
+       width: 100%;
+        height: 400px;
+     }
+
+     &-title {
+       padding: 5px;
+       text-align: center;
+       background-color: @colorBase;
+     }
+
+     &-description {
+       display: none;
+       padding: 0 20px 20px 20px;
+     }
+  }
+}
+
+footer {
+  background-color: @colorBase;
+  padding: 20px;
+}
+
+.social-links {
+
+    margin: auto;
+    width: 80%;
+    text-align: center;
+
+  &-list {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+  }
+
+  &-item {
+    display: inline-block;
+
+    .social-link {
+      display: block;
+      background: url(//a.dilcdn.com/sw/shared/social_sprite-111f415b5572.png);
+      background-position: 0 0;
+      background-size: 650% 300%;
+      background-size: 700% 300%;
+        width: 32px;
+        height: 32px;
+
+      &.facebook {
+        background-position: 0 0;
+      }
+
+      &.tumblr {
+        background-position: 16.66667% 0%;
+      }
+
+      &.twitter {
+        background-position: 33.33333% 0%;
+      }
+
+      &.instagram {
+        background-position: 50% 0%;
+      }
+
+      &.google_plus {
+        background-position: 66.66667% 0%;
+      }
+
+      &.youtube {
+        background-position: 83.333333% 0%;
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,94 @@
+/**
+ *  Variables
+**/
+@import "base";
+
+/**
+ *  Styles
+**/
+
+
+.header {
+
+    &-sm{
+      display: none;
+    }
+
+    &-md{
+      display: inline-block;
+      float: left;
+    }
+
+    &-menu {
+      display: inline-block;
+      float: right;
+    }
+
+    &:after {
+      .clearfix;
+    }
+
+}
+
+.nav {
+  &-list {
+    width: 80%;
+    margin: auto;
+
+    &-item {
+      padding: 15px;
+    }
+  }
+}
+
+
+.news{
+  padding: 30px 0;
+  width: 80%;
+  margin: auto;
+
+  &-list{
+    &-item {
+      width: 48%;
+      display: inline-block;
+
+      border: 1px solid @colorSecond;
+      .border-radius(30px);
+
+      &:first-child {
+        float: left;
+      }
+
+      &:last-child {
+        float: right;
+      }
+    }
+  }
+
+  &:after {
+    .clearfix;
+  }
+
+}
+
+
+main {
+  background: url('http://i.ytimg.com/vi/voWpbz1De_M/maxresdefault.jpg');
+}
+
+section {
+}
+
+
+.subsection-container{
+  width: 80%;
+  margin: 25px auto;
+  .subsection {
+
+    padding: 0 5px;
+
+    &-description {
+      display: block;
+    }
+  }
+}

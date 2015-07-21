@@ -1,0 +1,74 @@
+/**
+ *  Variables
+**/
+@import "base";
+
+/**
+ *  Styles
+**/
+
+
+.header {
+    &-sm{
+      display: none;
+    }
+
+    &-md{
+      display: block;
+    }
+
+    &-menu {
+      display: none;
+    }
+}
+
+.nav {
+  &-list {
+
+    &-item {
+      padding: 20px;
+    }
+  }
+}
+
+.news{
+  padding: 30px;
+
+  &-list{
+    &-item {
+      &:first-child{
+        margin-bottom: 30px;
+      }
+
+      .border-radius(30px);
+
+    }
+  }
+}
+
+
+main {
+  background: url('http://i.ytimg.com/vi/voWpbz1De_M/maxresdefault.jpg');
+  padding-bottom: 20px;
+}
+
+section {
+}
+
+
+.subsection-container{
+  width: 80%;
+  margin: 25px auto;
+  .subsection {
+    padding: 0;
+
+    &-description {
+      display: block;
+      background-color:  @colorBase;
+    }
+  }
+}
+
+footer {
+  background-color: @colorBase;
+}
